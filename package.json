@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "http-server legacy -p 8080 -c-1 -o",
+    "start:v2": "ng serve",
     "build": "ng build && node scripts/copy-legacy.mjs",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
@@ -24,6 +25,7 @@
     "@angular/build": "^22.2.3",
     "@angular/cli": "^22.2.3",
     "@angular/compiler-cli": "^22.2.0",
+    "http-server": "^14.1.1",
     "jsdom": "^30.0.0",
     "prettier": "^3.8.1",
     "typescript": "~6.0.2",
