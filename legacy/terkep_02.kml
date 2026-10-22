@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+	<Document>
+		<name>Nagyobb terkep</name>;			
+		<visibility>1</visibility>
+		<Folder>
+			<name>Nagyobb terkep</name>
+			<Placemark>
+				<Style>
+					<IconStyle>
+						<Icon>
+						<href>http://maps.google.com/mapfiles/kml/paddle/blu-circle.png</href>
+						</Icon>
+						<color>FFFFCC00</color>
+						<scale>0.8</scale>
+					</IconStyle>
+				</Style>
+				<name></name>
+				<description>
+				<![CDATA[
+				<p><p>
+				<strong>Hősök tere pszichológia - mentálhigiénés rendelő</strong>
+				<p><p>
+				Budapest VI. ker. Benczúr u. 43., Doohoma ház 
+				<p><p>
+				<a href="http://maps.google.com/maps?f=q&source=s_q&hl=hu&geocode=&q=Budapest,+Bencz%C3%BAr+utca+43,+Magyarorsz%C3%A1g&mrt=all&sll=47.501489,19.060593&sspn=0.039951,0.073729&ie=UTF8&hq=&hnear=1068+Budapest,+Budapest+VI.+ker%C3%BClete,+Bencz%C3%BAr+utca+43,+Magyarorsz%C3%A1g&ll=47.512157,19.078016&spn=0.010348,0.018432&z=16" target="_blank">Megtekint&eacute;s nagy t&eacute;rk&eacute;pen</a>
+				<p>
+				]]>
+				</description>
+				<visibility>1</visibility>
+				<Point>
+					<coordinates>19.07801,47.51235,111.1</coordinates>
+				</Point>				
+			</Placemark>			
+		</Folder>
+	</Document>
+</kml>
+
+

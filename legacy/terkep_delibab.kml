@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+	<Document>
+		<name>Nagyobb terkep</name>;			
+		<visibility>1</visibility>
+		<Folder>
+			<name>Nagyobb terkep</name>
+			<Placemark>
+				<Style>
+					<IconStyle>
+						<Icon>
+						<href>http://maps.google.com/mapfiles/kml/paddle/blu-circle.png</href>
+						</Icon>
+						<color>FFFFCC00</color>
+						<scale>0.8</scale>
+					</IconStyle>
+				</Style>
+				<name></name>
+				<description>
+				<![CDATA[
+				<p><p>
+				<strong>Katica gyermekpszichológia</strong>
+				<p><p>
+				Budapest VI. ker. Délibáb utca 10. 1. em. 4. 101-es kapucsengő
+				<p><p>
+				<a href="https://goo.gl/maps/8zyVP8F8dWv" target="_blank">Megtekint&eacute;s nagy t&eacute;rk&eacute;pen</a>
+				<p>
+				]]>
+				</description>
+				<visibility>1</visibility>
+				<Point>
+					<coordinates>19.0744717,47.5115586,111.1</coordinates>
+				</Point>				
+			</Placemark>
+			
+			
+		</Folder>
+	</Document>
+</kml>
+
+

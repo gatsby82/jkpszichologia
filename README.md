@@ -1,59 +1,46 @@
-# Jkpszichologia
+# jkpszichologia.hu
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.2.3.
+Juhász Katalin pszichológus honlapja. Firebase Hostingon fut.
 
-## Development server
+## Felépítés
 
-To start a local development server, run:
+| Útvonal | Tartalom | Forrás |
+|---|---|---|
+| `/`, `/*.htm`, `/pic/…`, `/picFelnott/…` | a jelenlegi (régi) statikus honlap, változatlanul | `legacy/` |
+| `/v2/…` | az új Angular alkalmazás (fejlesztés alatt, `noindex`) | `src/` |
 
-```bash
-ng serve
-```
+- **A régi oldal szerkesztése:** a fájlok a `legacy/` mappában vannak, pontosan úgy, ahogy korábban az FTP-n. A fájlnevekben **számít a kis- és nagybetű** (a régi IIS szerveren nem számított).
+- **A `legacy/` mappában nem lehet `v2` nevű fájl vagy mappa**, mert az ütközne az Angular alkalmazással (a build ilyenkor hibát ad).
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Build
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Node.js 22.22.3+ vagy 24.15+ kell (az Angular 22 ezt követeli meg).
 
 ```bash
-ng generate --help
+npm ci
+npm run build
 ```
 
-## Building
+A `npm run build` két lépésből áll:
 
-To build the project run:
+1. `ng build` → az Angular app a `dist/site/v2/` mappába kerül (`baseHref: /v2/`)
+2. `scripts/copy-legacy.mjs` → a `legacy/` tartalma a `dist/site/` gyökerébe másolódik
+
+A Firebase a `dist/site/` mappát szolgálja ki (lásd `firebase.json`). Átirányítás csak a `/v2/**` útvonalakra van (→ `/v2/index.html`), a nem létező régi oldalak valódi 404-et adnak.
+
+## Helyi futtatás
 
 ```bash
-ng build
+# csak az Angular app, élő újratöltéssel: http://localhost:4200/v2/
+npm start
+
+# a teljes oldal úgy, ahogy élesben fut (régi oldal + /v2): http://localhost:5000/
+npm run build
+npx firebase-tools emulators:start --only hosting --project demo-jkp
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+## Tesztek
 
 ```bash
-ng test
+npm test
 ```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

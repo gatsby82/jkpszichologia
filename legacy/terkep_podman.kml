@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+	<Document>
+		<name>Nagyobb terkep</name>;			
+		<visibility>1</visibility>
+		<Folder>
+			<name>Nagyobb terkep</name>
+			<Placemark>
+				<Style>
+					<IconStyle>
+						<Icon>
+						<href>http://maps.google.com/mapfiles/kml/paddle/blu-circle.png</href>
+						</Icon>
+						<color>FFFFCC00</color>
+						<scale>0.8</scale>
+					</IconStyle>
+				</Style>
+				<name></name>
+				<description>
+				<![CDATA[
+				<p><p>
+				<strong>Hősök tere pszichológia - mentálhigiénés rendelő</strong>
+				<p><p>
+				Budapest VI. ker. Podmaniczky utca 10. 
+				<p><p>
+				<a href="https://www.google.hu/maps/place/Podmaniczky+u.+10,+Budapest,+1065/@47.5079113,19.0563095,17z/data=!3m1!4b1!4m2!3m1!1s0x4741dc12a4fbcc51:0xb289e1b9c8634de5" target="_blank">Megtekint&eacute;s nagy t&eacute;rk&eacute;pen</a>
+				<p>
+				]]>
+				</description>
+				<visibility>1</visibility>
+				<Point>
+					<coordinates>19.0563095,47.5079113,111.1</coordinates>
+				</Point>				
+			</Placemark>
+			
+			
+		</Folder>
+	</Document>
+</kml>
+
+
