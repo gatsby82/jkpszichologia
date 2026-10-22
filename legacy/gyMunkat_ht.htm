@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="hu">
 <head>
 <meta charset="utf-8">
@@ -22,6 +23,22 @@ body {
 body,td,th {
 	color: #5E0000;
 	text-align: center;
+}
+td[width="194"][height="600"] > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+td[width="194"][height="600"] > div > a {
+  display: block;
+  line-height: 0;
+}
+td[width="194"][height="600"] > div > a > img,
+td[width="194"][height="600"] > div > img {
+  display: block;
+}
+td[width="194"][height="600"] > div > br {
+  display: none;
 }
 #balmenu {
 	text-align: left;
@@ -110,18 +127,24 @@ function MM_swapImage() { //v3.0
 </head>
 
 <body onLoad="MM_preloadImages('pic/gomb_bemut_01_mOn.jpg','pic/gomb_mibenS_01_mOn.jpg','pic/gomb_elsoL_01_mOn.jpg','pic/gomb_alk_01_mOn.jpg','pic/gomb_kapcs_01_mOn.jpg','pic/gomb_munkat_01_mOn.jpg')">
+<a name="oldalTeteje"></a>
 <table width="800" height="100%" border="0" cellspacing="0" cellpadding="0" align="center" >
   <tr>
     <td valign="top" background="pic/back_alapCsik_01.jpg"><table width="800" border="0" cellspacing="0" cellpadding="0">
       <tr>
         <td width="194" height="187"><img src="pic/backKepek05Munkat.jpg" width="194" height="187" alt=""></td>
-        <td width="606" height="187" align="left" valign="top" bgcolor="#FCFCF0"><a name="oldalTeteje"></a><img src="pic/fejlec_01.jpg" width="606" height="136" alt="Katica gyermekpszichológia"><img src="pic/cim_munkat_01.jpg" width="606" height="51" alt="Munkatársaim"></td>
+        <td width="606" height="187" align="left" valign="top" bgcolor="#FCFCF0"><img src="pic/fejlec_01.jpg" width="606" height="136" alt="Katica gyermekpszichológia"><img src="pic/cim_munkat_01.jpg" width="606" height="51" alt="Munkatársaim"></td>
       </tr>
       <tr>
         <td width="194" height="600" align="left" valign="top"><div align="left"><img src="pic/gomb_nullaFent_01.jpg" width="194" height="21" alt=""><a href="gyBemut.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','pic/gomb_bemut_01_mOn.jpg',1)"><img src="pic/gomb_bemut_01.jpg" name="Image19" width="194" height="37" border="0" alt="Bemutatkozás"></a><a href="gyMibenS.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image20','','pic/gomb_mibenS_01_mOn.jpg',1)"><img src="pic/gomb_mibenS_01.jpg" name="Image20" width="194" height="47" border="0" alt="Miben segíthetek?"></a><a href="gyElsoL.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image21','','pic/gomb_elsoL_01_mOn.jpg',1)"><img src="pic/gomb_elsoL_01.jpg" name="Image21" width="194" height="43" border="0" alt="Az első lépések"></a><a href="gyAlkalm.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image22','','pic/gomb_alk_01_mOn.jpg',1)"><img src="pic/gomb_alk_01.jpg" name="Image22" width="194" height="91" border="0" alt="Alkalmazott módszerek"></a>
-		    <a href="gyMunkat.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image23','','pic/gomb_munkat_01_mOn.jpg',1)"><img src="pic/gomb_munkat_01.jpg" name="Image23" width="194" height="57" border="0" alt="Munkatársaim"></a><a href="gyKapcs.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image24','','pic/gomb_kapcs_01_mOn.jpg',1)"><img src="pic/gomb_kapcs_01.jpg" name="Image24" width="194" height="44" border="0" alt="Kapcsolat"></a><br>
-          <a href="gyRendeloberles.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('ImageRB','','pic/gomb_rendelob_01_mOn.jpg',1)"><img src="pic/gomb_rendelob_01.jpg" name="ImageRB" width="194" height="50" border="0" alt="Rendelőbérlés"></a><br>
-          <img src="pic/gomb_nullaLent_01.jpg" width="194" height="62" alt=""><a href="fBemut.htm"><img src="pic/gomb_Menu90FelnottT.jpg" width="109" height="16" border="0" alt="Felnőtt rendelés"></a></div></td>
+		    <a href="gyMunkat.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image23','','pic/gomb_munkat_01_mOn.jpg',1)"><img src="pic/gomb_munkat_01.jpg" name="Image23" width="194" height="57" border="0" alt="Munkatársaim"></a><a href="gyKapcs.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image24','','pic/gomb_kapcs_01_mOn.jpg',1)"><img src="pic/gomb_kapcs_01.jpg" name="Image24" width="194" height="44" border="0" alt="Kapcsolat"></a>
+          <img src="pic/gomb_nullaLent_01.jpg" width="194" height="62" alt="">
+            <a href="fBemut.htm">
+              <img src="pic/gomb_Menu90FelnottT_110.jpg" width="120" height="18" border="0" alt="Felnőtt rendelés">
+            </a>
+            <a href="gyRendeloberles.htm" style="margin-top: 11px">
+              <img src="pic/gomb_Menu90Rendeloberles_110.jpg" width="120" height="18" border="0" alt="Rendelőbérlés">
+            </a></div></td>
         <td width="606" height="1500" align="center" valign="top" background="pic/back_tartalomFent_01.jpg" class="background1"><table width="590" border="0" cellspacing="0" cellpadding="0">
             <tr>
               <td><p>&nbsp;</p>
